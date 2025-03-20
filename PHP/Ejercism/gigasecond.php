@@ -1,5 +1,6 @@
 <?php
 
+// Dificultad según Exercism: FÁCIL         Dificultad según mi crierio: FÁCIL
 /*--------------------------------------------------------------------------------------------------------------------------------
 GIGASECOND
 --------------------------------------------------------------------------------------------------------------------------------
@@ -37,8 +38,6 @@ declare(strict_types=1);
 $date = new DateTimeImmutable("2015-01-24 22:00:00");
 
 function from(DateTimeImmutable $date): DateTimeImmutable{
-
-    //$afterAGigasecond = strtotime('+1000000000',  strtotime($date));
 
     $afterAGigasecond = $date->modify('+1000000000 seconds');
 
